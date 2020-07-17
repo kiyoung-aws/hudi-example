@@ -1,0 +1,65 @@
+
+{
+  "name": "olistOrders",
+  "type": "record",
+  "namespace": "com.amazon.kiyoung.dev.avro",
+  "fields": [
+    {
+      "name": "order_id",
+      "type": "string"
+    },
+    {
+      "name": "customer_id",
+      "type": "string"
+    },
+    {
+      "name": "order_status",
+      "type":  "string"
+    },
+    {
+      "name": "order_purchase_timestamp",
+      "type": ["null", "string"],
+      "logicalType": "timestamp",
+      "default": null
+    },
+    {
+      "name": "order_approved_at",
+      "type": ["null", "string"],
+      "logicalType": "timestamp",
+      "default": null
+    },
+    {
+      "name": "order_delivered_carrier_date",
+      "type": ["null", "string"],
+      "logicalType": "timestamp",
+      "default": null
+    },
+    {
+      "name": "order_delivered_customer_date",
+      "type": ["null", "string"],
+      "logicalType": "timestamp",
+      "default": null
+    },
+    {
+      "name": "order_estimated_delivery_date",
+      "type": ["null", "string"],
+      "logicalType": "timestamp",
+      "default": null
+    },
+    {
+      "name": "ts",
+      "type": ["null", "string"],
+      "logicalType": "timestamp-millis",
+      "default": null
+    },
+    {
+      "name": "order_purchase_date",
+      "type": "string"
+    },
+    {
+      "name": "_hoodie_is_deleted",
+      "type" : "boolean",
+      "default" : false
+    }
+  ]
+}

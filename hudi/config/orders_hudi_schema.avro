@@ -1,0 +1,63 @@
+
+{
+  "name": "ordersHudi",
+  "type": "record",
+  "namespace": "com.amazon.mbp.orders.avro",
+  "fields": [
+    {
+      "name": "orderNumber",
+      "type": "int"
+    },
+    {
+      "name": "orderDate",
+      "type": "string"
+    },
+    {
+      "name": "requiredDate",
+      "type": "string"
+    },
+    {
+      "name": "shippedDate",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "status",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "comments",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "customerNumber",
+      "type": "int"
+    },
+    {
+      "name": "createdDate",
+      "type": "string",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "name": "updatedDate",
+      "type": "string",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "name": "order_dt",
+      "type": "string"
+    },
+    {
+      "name": "ts",
+      "type": "string",
+      "logicalType": "timestamp-millis"
+    },
+    {
+      "name": "_hoodie_is_deleted",
+      "type" : "boolean",
+      "default" : false
+    }
+  ]
+}
